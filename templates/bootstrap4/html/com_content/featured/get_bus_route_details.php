@@ -40,7 +40,7 @@ if ( !empty($results) ) {
 }
 if ( empty($results) ) {
     $query = $db->getQuery(true);
-    $query->select($db->quoteName(array('bus_no', 'route')))
+    $query->select($db->quoteName(array('bus_no', 'source', 'destination', 'route')))
           ->from($db->quoteName('#__bus_routes'))
           ->where($db->quoteName('city') . ' = \''. $city . '\'')
           ->where($db->quoteName('route') . ' LIKE \'%'. $source . '%\'')
