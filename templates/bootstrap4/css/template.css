@@ -28,6 +28,10 @@ header {
     height: inherit;
     padding: 10px 0;
 }
+.heading a {
+    color: #fff;
+    text-decoration: none;
+}
 .content {
     min-height: 300px;
 }

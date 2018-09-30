@@ -61,7 +61,7 @@ $doc->addScript($this->baseurl . '/templates/' . $this->template . '/js/validate
     </head>
     <body>
         <header>
-            <h1 class="heading text-center"><?php echo $sitename; ?></h1>
+            <h1 class="heading text-center"><a href="<?=JUri::base();?>"><?php echo $sitename; ?></a></h1>
         </header>
         <div class="body">
             <div class="content">
